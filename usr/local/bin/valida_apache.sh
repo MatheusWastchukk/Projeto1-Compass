@@ -7,9 +7,9 @@ STATUS=$(systemctl is-active $SERVICE)
 MESSAGE=""
 
 if [ "$STATUS" = "active" ]; then
-    MESSAGE="ONLINE"
-    echo "$TIMESTAMP $SERVICE $STATUS $MESSAGE" > /mnt/nfs/matheus_wastchuk/apache_online.log
+    MESSAGE="O servidor do apache está ONLINE"
+    echo "$TIMESTAMP $SERVICE $STATUS $MESSAGE" >> /mnt/nfs/matheus_wastchuk/apache_online.log
 else
-    MESSAGE="OFFLINE"
-    echo "$TIMESTAMP $SERVICE $STATUS $MESSAGE" > /mnt/nfs/matheus_wastchuk/apache_offline.log
+    MESSAGE="O servidor do apache está OFFLINE"
+    echo "$TIMESTAMP $SERVICE $STATUS $MESSAGE" >> /mnt/nfs/matheus_wastchuk/apache_offline.log
 fi
