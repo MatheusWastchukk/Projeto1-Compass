@@ -82,28 +82,28 @@ Agora, sua instância EC2 está configurada e pronta para o próximo passo.
      - Tipo: **SSH**
      - Protocolo: **TCP**
      - Porta: **22**
-     - Origem: **Anywhere (0.0.0.0/0)** para permitir acesso de qualquer lugar ou **My IP** para permitir apenas do seu IP.
+     - Origem: **Anywhere (0.0.0.0/0)**.
 
    - **NFS (111/TCP 2049/TCP e UDP):**
      - Tipo: **Custom TCP Rule**
      - Protocolo: **TCP**
      - Porta: **111**
-     - Origem: **Anywhere (0.0.0.0/0)** ou **faixa de IP da sua rede**.
+     - Origem: **Anywhere (0.0.0.0/0)**.
    - **NFS (111/UDP)**
      - **Custom UDP Rule**
      - Protocolo: **UDP**
      - Porta: **111**
-     - Origem: **Anywhere (0.0.0.0/0)** ou **faixa de IP da sua rede**.
+     - Origem: **Anywhere (0.0.0.0/0)**.
    - **NFS (2049/TCP)**
      - **Custom TCP Rule**
      - Protocolo: **TCP**
      - Porta: **2049**
-     - Origem: **Anywhere (0.0.0.0/0)** ou **faixa de IP da sua rede**.
+     - Origem: **Anywhere (0.0.0.0/0)**.
    - **NFS (2049/UDP)**
      - **Custom UDP Rule**
      - Protocolo: **UDP**
      - Porta: **2049**
-     - Origem: **Anywhere (0.0.0.0/0)** ou **faixa de IP da sua rede**.
+     - Origem: **Anywhere (0.0.0.0/0)**.
 
    - **HTTP (80/TCP):**
      - Tipo: **HTTP**
